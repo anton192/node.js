@@ -1,16 +1,18 @@
 {
   "name": "node.js",
   "version": "0.0.0",
-  "description": "",
+  "description": "node.js paint",
   "main": "server.js",
   "dependencies": {
     "mariasql": "~0.2.6",
     "socket.io": "~1.4.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "socket.io": "^1.4.6",
+    "mariasql": "^0.2.6"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
