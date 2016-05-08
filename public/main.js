@@ -10,9 +10,19 @@ window.onload = function() {
 		document.querySelector('#input').onkeypress = function(e) {
 			if (e.which == '13') {
 				socket.send({
-					action: 'getSession',
-					data: {}
+					action: 'setSession',
+					data: {
+						session: '45eed83caa67bc0f658b378f808d9310'
+					}
 				});
+				setTimeout(function () {
+					socket.send({
+						action: 'removeAction',
+						data: {
+							id: 2
+						}
+					});
+				}, 1000);
 			}
 		};
 		document.querySelector('#send').onclick = function() {

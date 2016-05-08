@@ -9,28 +9,35 @@ var c = new Client({
 	password: 'root' 
 });
 
-var clients = [];
-var numClients = 0;
+var sessions = [];
 
 io.sockets.on('connection', function (socket) {
-	console.log('New connection');
+	console.log('New connection ' + socket.id);
 	c.query('USE paint;');
 
-	clients.
+	sessions[socket.id] = crypto.createHash('md5').update(Date.now() + '').digest('hex');
+	c.query('INSERT INTO sessions VALUES (null, \'' + sessions[socket.id] + '\', now());');
+
 
 	socket.on('message', function (query) {
 		console.log('New message ' + query.action);
 
 		if (query.action == 'getSession') {
-			var session = crypto.createHash('md5').update(Date.now() + '').digest('hex');
-			c.query('INSERT INTO sessions VALUES (null, \'' + session + '\', now());', function (err, rows) {
-				if (err) {
-					socket.json.send({ action: 'getSession', type: 'error', data: err });
-				} else {
-					socket.json.send({ action: 'getSession', type: 'data', data: { session: session } });
-				}
-			});
-		} else if (query.action == 'setSession') {
+			if (sessions[socket.id]) {
+				socket.json.send({ action: 'getSession', type: 'data', data: { session: sessions[socket.id] } });
+			} else {
+				sessions[socket.id] = crypto.createHash('md5').update(Date.now() + '').digest('hex');
+				c.query('INSERT INTO sessions VALUES (null, \'' + sessions[socket.id] + '\', now());', function(err, rows) {
+					if (err) {
+						socket.json.send({ action: 'getSession', type: 'error', data: { type: 'DB', error: err } });	
+					} else {
+						socket.json.send({ action: 'getSession', type: 'data', data: { session: sessions[socket.id] } });
+					}
+				});
+			}
+		}
+
+		if (query.action == 'setSession') {
 			c.query('SELECT COUNT(*) as count FROM sessions WHERE code = \'' + query.data.session + '\';', function (err, rows) {
 				if (err) {
 					socket.json.send({ action: 'setSession', type: 'error', data: { type: 'DB', error: err } });
@@ -38,12 +45,53 @@ io.sockets.on('connection', function (socket) {
 					if (rows[0]['count'] == 0) {
 						socket.json.send({ action: 'setSession', type: 'error', data: { type: 'No session' } });
 					} else {
+						sessions[socket.id] = query.data.session;
 						socket.json.send({ action: 'setSession', type: 'data', data: { type: 'Ok' } });
 					}
 				}
 			});
+		} 
+
+		if (query.action == 'removeAction') {
+			c.query('DELETE FROM actions WHERE id = ' + query.data.id + ' AND session = \'' + sessions[socket.id] + '\';', function(err, rows) {
+				if (err) {
+					socket.json.send({ action: 'removeAction', type: 'error', data: { type: 'DB', error: err } });
+				} else {
+					if (rows.info.affectedRows == 0) {
+						socket.json.send({ action: 'removeAction', type: 'error', data: { type: 'No actual actions' } });
+					} else {
+						socket.json.send({ action: 'removeAction', type: 'data', data: { type: 'Ok' } });
+					}
+				}
+			});
 		}
+
+		if (query.action == 'addAction') {
+			c.query('INSERT INTO actions VALUES(null, :object, \'' + sessions[socket.id] + '\', :xMin, :xMax, :yMin, :yMax, ' + Date.now() + ');', query.data, function(err, rows) {
+				if (err) {
+					socket.json.send({ action: 'addAction', type: 'error', data: { type: 'DB', error: err } });
+				} else {
+					socket.json.send({ action: 'addAction', type: 'data', data: { type: 'ok' } });
+				}
+			});	
+		}
+
+		/*
+			CREATE TABLE actions(
+				id INT NOT NULL AUTO_INCREMENT,
+				object varchar(1024),
+				session varchar(128),
+				xMin DOUBLE,
+				xMax DOUBLE,
+				yMin DOUBLE,
+				yMax DOUBLE,
+				time DOUBLE,
+				PRIMARY KEY (id)
+			);
+		*/
 	});
+
+
 	socket.on('disconnect', function() {
 		c.end();
 	});
