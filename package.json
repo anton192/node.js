@@ -1,26 +1,11 @@
 {
-  "name": "node.js",
-  "version": "0.0.0",
-  "description": "node.js paint",
-  "main": "server.js",
-  "dependencies": {
-    "mariasql": "~0.2.6",
-    "socket.io": "~1.4.6"
-  },
   "devDependencies": {
     "socket.io": "^1.4.6",
-    "mariasql": "^0.2.6"
+    "mariasql": "^0.2.6",
+    "gulp": "^3.9.0"
   },
   "scripts": {
-    "test": "node test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/anton192/node.js.git"
-  },
-  "author": "",
-  "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/anton192/node.js/issues"
+    "test": "node test.js",
+    "gulp": "./node_modules/.bin/gulp"
   }
 }
