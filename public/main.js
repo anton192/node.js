@@ -1,6 +1,5 @@
 window.onload = function() {
 	socket = io.connect('http://127.0.0.1:8081');
-//JSON.parse(JSON.stringify(a))
 	socket.on('connect', function () {
 		socket.on('message', function (msg) {
 			document.querySelector('#log').innerHTML += JSON.stringify(msg) + "<br />";
