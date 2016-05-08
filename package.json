@@ -4,11 +4,9 @@
     "mariasql": "^0.2.6",
   	"should": "*",
   	"mocha": "*",
-  	"supertest": "*",
     "socket.io-client": "*"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha",
-    "gulp": "./node_modules/.bin/gulp"
+    "test": "node test.js"
   }
 }
