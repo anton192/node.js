@@ -2,11 +2,10 @@
   "devDependencies": {
     "socket.io": "^1.4.6",
     "mariasql": "^0.2.6",
-  	"should": "*",
-  	"mocha": "*",
-    "socket.io-client": "*"
+  	"chai": "*",
+  	"mocha": "*"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "./node_modules/.bin/mocha"
   }
 }

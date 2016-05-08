@@ -1,7 +1,14 @@
 var should = require('should');
-var io = require('socket.io-client');
+//var io = require('socket.io-client');
+var assert = require('chai').assert;
 
-var socketURL = 'http://127.0.0.1:8081';
+describe('Simple test', function() {
+	it('Simple test (6 == 6)', function () {
+	  assert.equal(6, 6);
+	});
+});
+
+/*var socketURL = 'http://127.0.0.1:8081';
 var options = {
   transports: ['websocket'],
   'force new connection': true
@@ -25,7 +32,7 @@ describe('Server', function(){
 			done();
 		});
 	})
-});
+});*/
 
 /*describe("Paint Server", function(){
 	it('simple test', function() {
