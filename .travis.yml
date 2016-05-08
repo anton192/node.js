@@ -3,5 +3,7 @@ node_js:
   - "4.0"
 notifications:
   email: false
-addons:
-  mariadb: '10.0'
+before_install:
+  - npm install -g codecov
+after_success:
+  - codecov
