@@ -9,22 +9,28 @@ window.onload = function() {
 
 		document.querySelector('#input').onkeypress = function(e) {
 			if (e.which == '13') {
-				socket.send({
+				/*socket.send({
 					action: 'setSession',
 					data: {
 						session: '45eed83caa67bc0f658b378f808d9310'
 					}
-				});
+				});*/
 				setTimeout(function () {
 					socket.send({
 						action: 'addAction',
-						data: {
-							object: 'object',
-							xMin: 1,
-							xMax: 2,
-							yMin: 3,
-							yMax: 4
-						}
+						data: { object: 'object1', xMin: 1, xMax: 2, yMin: 3, yMax: 4 }
+					});
+					socket.send({
+						action: 'addAction',
+						data: { object: 'object2', xMin: 1, xMax: 2, yMin: 3, yMax: 4 }
+					});
+					socket.send({
+						action: 'addAction',
+						data: { object: 'object3', xMin: 1, xMax: 2, yMin: 3, yMax: 4 }
+					});
+					socket.send({
+						action: 'addAction',
+						data: { object: 'object4', xMin: 1, xMax: 2, yMin: 3, yMax: 4 }
 					});
 					setTimeout(function () {
 						socket.send({
@@ -37,6 +43,10 @@ window.onload = function() {
 								timeStart: 0,
 								timeEnd: 1562728126770
 							}
+						});
+						socket.send({
+							action: 'addAction',
+							data: { object: 'object5', xMin: 1, xMax: 2, yMin: 3, yMax: 4 }
 						});
 					}, 1000);
 				}, 1000);

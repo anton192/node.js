@@ -10,6 +10,9 @@ var c = new Client({
 });
 
 var sessions = [];
+var Nlimit = 3; // operations in second
+var limit = [];
+
 
 io.sockets.on('connection', function (socket) {
 	console.log('New connection ' + socket.id);
@@ -17,6 +20,7 @@ io.sockets.on('connection', function (socket) {
 
 	sessions[socket.id] = crypto.createHash('md5').update(Date.now() + '').digest('hex');
 	c.query('INSERT INTO sessions VALUES (null, \'' + sessions[socket.id] + '\', now());');
+	limit[socket.id] = Array(Nlimit + 1).join('0').split('');
 
 
 	socket.on('message', function (query) {
@@ -67,13 +71,20 @@ io.sockets.on('connection', function (socket) {
 		}
 
 		if (query.action == 'addAction') {
-			c.query('INSERT INTO actions VALUES(null, :object, \'' + sessions[socket.id] + '\', :xMin, :xMax, :yMin, :yMax, ' + Date.now() + ');', query.data, function(err, rows) {
-				if (err) {
-					socket.json.send({ action: 'addAction', type: 'error', data: { type: 'DB', error: err } });
-				} else {
-					socket.json.send({ action: 'addAction', type: 'data', data: { type: 'ok' } });
-				}
-			});	
+			console.log(limit[socket.id]);
+			if (limit[socket.id][Nlimit - 1] && Date.now() - limit[socket.id][Nlimit - 1] <= 1000) {
+				socket.json.send({ action: 'addAction', type: 'error', data: { type: 'RateLimit' } });
+			} else {
+				limit[socket.id] = limit[socket.id].map(function(item, i) { return limit[socket.id][i-1]; });
+				limit[socket.id][0] = Date.now();
+				c.query('INSERT INTO actions VALUES(null, :object, \'' + sessions[socket.id] + '\', :xMin, :xMax, :yMin, :yMax, ' + Date.now() + ');', query.data, function(err, rows) {
+					if (err) {
+						socket.json.send({ action: 'addAction', type: 'error', data: { type: 'DB', error: err } });
+					} else {
+						socket.json.send({ action: 'addAction', type: 'data', data: { type: 'ok' } });
+					}
+				});	
+			}
 		}
 
 		if (query.action == 'getMyActions') {
@@ -96,19 +107,6 @@ io.sockets.on('connection', function (socket) {
 			});
 		}
 
-		/*
-			CREATE TABLE actions(
-				id INT NOT NULL AUTO_INCREMENT,
-				object varchar(1024),
-				session varchar(128),
-				xMin DOUBLE,
-				xMax DOUBLE,
-				yMin DOUBLE,
-				yMax DOUBLE,
-				time DOUBLE,
-				PRIMARY KEY (id)
-			);
-		*/
 	});
 
 
