@@ -1,0 +1,1728 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/anton/.nvm/versions/node/v4.0.0/bin/node',
+1 verbose cli   '/Users/anton/.nvm/versions/node/v4.0.0/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '-g',
+1 verbose cli   'mariasql' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose install initial load of /Users/anton/.nvm/versions/node/v4.0.0/lib/package.json
+5 verbose readDependencies loading dependencies from /Users/anton/.nvm/versions/node/v4.0.0/lib/package.json
+6 silly cache add args [ 'mariasql', null ]
+7 verbose cache add spec mariasql
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'mariasql',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'mariasql',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed mariasql@*
+10 verbose addNamed "*" is a valid semver range for mariasql
+11 silly addNameRange { name: 'mariasql', range: '*', hasData: false }
+12 silly mapToRegistry name mariasql
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/mariasql
+16 verbose addNameRange registry:https://registry.npmjs.org/mariasql not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/mariasql
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 1:42:16 AM
+20 verbose request id 7efe365666f9073d
+21 verbose etag "E1YCXN2YXM47TYNUP7O94AIHF"
+22 http request GET https://registry.npmjs.org/mariasql
+23 http 304 https://registry.npmjs.org/mariasql
+24 silly get cb [ 304,
+24 silly get   { date: 'Sun, 08 May 2016 22:42:17 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     etag: '"E1YCXN2YXM47TYNUP7O94AIHF"',
+24 silly get     age: '67',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-fra1235-FRA',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1462747337.001909,VS0,VE0',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose etag https://registry.npmjs.org/mariasql from cache
+26 verbose get saving mariasql to /Users/anton/.npm/registry.npmjs.org/mariasql/.cache.json
+27 silly addNameRange number 2 { name: 'mariasql', range: '*', hasData: true }
+28 silly addNameRange versions [ 'mariasql',
+28 silly addNameRange   [ '0.0.0',
+28 silly addNameRange     '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.1.5',
+28 silly addNameRange     '0.1.6',
+28 silly addNameRange     '0.1.7',
+28 silly addNameRange     '0.1.8',
+28 silly addNameRange     '0.1.9',
+28 silly addNameRange     '0.1.10',
+28 silly addNameRange     '0.1.11',
+28 silly addNameRange     '0.1.12',
+28 silly addNameRange     '0.1.13',
+28 silly addNameRange     '0.1.14',
+28 silly addNameRange     '0.1.15',
+28 silly addNameRange     '0.1.16',
+28 silly addNameRange     '0.1.17',
+28 silly addNameRange     '0.1.18',
+28 silly addNameRange     '0.1.19',
+28 silly addNameRange     '0.1.20',
+28 silly addNameRange     '0.1.21',
+28 silly addNameRange     '0.1.22',
+28 silly addNameRange     '0.1.23',
+28 silly addNameRange     '0.1.24',
+28 silly addNameRange     '0.2.0',
+28 silly addNameRange     '0.2.1',
+28 silly addNameRange     '0.2.2',
+28 silly addNameRange     '0.2.3',
+28 silly addNameRange     '0.2.4',
+28 silly addNameRange     '0.2.5',
+28 silly addNameRange     '0.2.6' ] ]
+29 silly addNamed mariasql@0.2.6
+30 verbose addNamed "0.2.6" is a plain semver version for mariasql
+31 silly cache afterAdd mariasql@0.2.6
+32 verbose afterAdd /Users/anton/.npm/mariasql/0.2.6/package/package.json not in flight; writing
+33 verbose afterAdd /Users/anton/.npm/mariasql/0.2.6/package/package.json written
+34 silly install resolved [ { name: 'mariasql',
+34 silly install resolved     version: '0.2.6',
+34 silly install resolved     author: { name: 'Brian White', email: 'mscdex@mscdex.net' },
+34 silly install resolved     description: 'A node.js binding to MariaDB\'s non-blocking (MySQL-compatible) client library',
+34 silly install resolved     main: './lib/Client',
+34 silly install resolved     engines: { node: '>=0.10.0' },
+34 silly install resolved     dependencies: { 'lru-cache': '^2.7.0', nan: '^2.0.9' },
+34 silly install resolved     scripts: { test: 'node test/test.js', install: 'node-gyp rebuild' },
+34 silly install resolved     keywords: [ 'mysql', 'sql', 'client', 'mariadb', 'async', 'nonblocking' ],
+34 silly install resolved     licenses: [ [Object] ],
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'git+ssh://git@github.com/mscdex/node-mariasql.git' },
+34 silly install resolved     gypfile: true,
+34 silly install resolved     bugs: { url: 'https://github.com/mscdex/node-mariasql/issues' },
+34 silly install resolved     homepage: 'https://github.com/mscdex/node-mariasql#readme',
+34 silly install resolved     _id: 'mariasql@0.2.6',
+34 silly install resolved     _shasum: 'ab78b0671172f0eaf4e80ddad029b803f35cf77a',
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/mariasql/-/mariasql-0.2.6.tgz',
+34 silly install resolved     _from: 'mariasql@*',
+34 silly install resolved     _npmVersion: '3.8.3',
+34 silly install resolved     _nodeVersion: '5.10.0',
+34 silly install resolved     _npmUser: { name: 'mscdex', email: 'mscdex@mscdex.net' },
+34 silly install resolved     maintainers: [ [Object] ],
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: 'ab78b0671172f0eaf4e80ddad029b803f35cf77a',
+34 silly install resolved        tarball: 'https://registry.npmjs.org/mariasql/-/mariasql-0.2.6.tgz' },
+34 silly install resolved     _npmOperationalInternal:
+34 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+34 silly install resolved        tmp: 'tmp/mariasql-0.2.6.tgz_1459707376952_0.3804281756747514' },
+34 silly install resolved     directories: {},
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install mariasql@0.2.6 into /Users/anton/.nvm/versions/node/v4.0.0/lib
+36 info installOne mariasql@0.2.6
+37 verbose installOne of mariasql to /Users/anton/.nvm/versions/node/v4.0.0/lib not in flight; installing
+38 verbose lock using /Users/anton/.npm/_locks/mariasql-5279b91ed937eaed.lock for /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+39 silly install write writing mariasql 0.2.6 to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+40 verbose unbuild lib/node_modules/mariasql
+41 silly gentlyRm /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql is being purged from base /Users/anton/.nvm/versions/node/v4.0.0
+42 verbose gentlyRm don't care about contents; nuking /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+43 verbose tar unpack /Users/anton/.npm/mariasql/0.2.6/package.tgz
+44 verbose tar unpacking to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+45 silly gentlyRm /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql is being purged
+46 verbose gentlyRm don't care about contents; nuking /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 silly gunzTarPerm extractEntry
+49 silly gunzTarPerm modified mode [ '', 509, 493 ]
+50 silly gunzTarPerm extractEntry .travis.yml
+51 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+52 silly gunzTarPerm extractEntry LICENSE
+53 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+56 silly gunzTarPerm extractEntry appveyor.yml
+57 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+58 silly gunzTarPerm extractEntry binding.gyp
+59 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+60 silly gunzTarPerm extractEntry deps/
+61 silly gunzTarPerm modified mode [ 'deps/', 509, 493 ]
+62 silly gunzTarPerm extractEntry deps/libmariadbclient/
+63 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/', 509, 493 ]
+64 silly gunzTarPerm extractEntry deps/libmariadbclient/COPYING
+65 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/COPYING', 436, 420 ]
+66 silly gunzTarPerm extractEntry deps/libmariadbclient/COPYING.LESSER
+67 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/COPYING.LESSER', 436, 420 ]
+68 silly gunzTarPerm extractEntry deps/libmariadbclient/KNOWN_BUGS.txt
+69 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/KNOWN_BUGS.txt', 436, 420 ]
+70 silly gunzTarPerm extractEntry deps/libmariadbclient/README
+71 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/README', 436, 420 ]
+72 silly gunzTarPerm extractEntry deps/libmariadbclient/VERSION
+73 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/VERSION', 436, 420 ]
+74 silly gunzTarPerm extractEntry deps/libmariadbclient/config/
+75 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/', 509, 493 ]
+76 silly gunzTarPerm extractEntry deps/libmariadbclient/config/config.gypi
+77 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/config.gypi', 436, 420 ]
+78 silly gunzTarPerm extractEntry deps/libmariadbclient/config/freebsd/
+79 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/freebsd/', 509, 493 ]
+80 silly gunzTarPerm extractEntry deps/libmariadbclient/config/freebsd/config.h
+81 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/freebsd/config.h', 436, 420 ]
+82 silly gunzTarPerm extractEntry deps/libmariadbclient/config/linux/
+83 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/linux/', 509, 493 ]
+84 silly gunzTarPerm extractEntry deps/libmariadbclient/config/linux/config.h
+85 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/linux/config.h', 436, 420 ]
+86 silly gunzTarPerm extractEntry deps/libmariadbclient/config/mac/
+87 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/mac/', 509, 493 ]
+88 silly gunzTarPerm extractEntry deps/libmariadbclient/config/mac/config.h
+89 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/mac/config.h', 436, 420 ]
+90 silly gunzTarPerm extractEntry deps/libmariadbclient/config/solaris/
+91 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/solaris/', 509, 493 ]
+92 silly gunzTarPerm extractEntry deps/libmariadbclient/config/solaris/config.h
+93 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/solaris/config.h', 436, 420 ]
+94 silly gunzTarPerm extractEntry deps/libmariadbclient/config/win/
+95 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/win/', 509, 493 ]
+96 silly gunzTarPerm extractEntry deps/libmariadbclient/config/win/config.h
+97 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/config/win/config.h', 436, 420 ]
+98 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/
+99 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/', 509, 493 ]
+100 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/
+101 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/', 509, 493 ]
+102 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/AUTHORS
+103 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/AUTHORS', 436, 420 ]
+104 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/COPYING
+105 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/COPYING', 436, 420 ]
+106 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/ChangeLog
+107 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/ChangeLog', 436, 420 ]
+108 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/FLOSS-EXCEPTIONS
+109 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/FLOSS-EXCEPTIONS',
+109 silly gunzTarPerm   436,
+109 silly gunzTarPerm   420 ]
+110 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/INSTALL
+111 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/INSTALL', 436, 420 ]
+112 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/NEWS
+113 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/NEWS', 436, 420 ]
+114 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/README
+115 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/README', 436, 420 ]
+116 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/
+117 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/', 509, 493 ]
+118 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/buffer.hpp
+119 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/buffer.hpp',
+119 silly gunzTarPerm   436,
+119 silly gunzTarPerm   420 ]
+120 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/cert_wrapper.hpp
+121 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/cert_wrapper.hpp',
+121 silly gunzTarPerm   436,
+121 silly gunzTarPerm   420 ]
+122 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/crypto_wrapper.hpp
+123 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/crypto_wrapper.hpp',
+123 silly gunzTarPerm   436,
+123 silly gunzTarPerm   420 ]
+124 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/factory.hpp
+125 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/factory.hpp',
+125 silly gunzTarPerm   436,
+125 silly gunzTarPerm   420 ]
+126 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/handshake.hpp
+127 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/handshake.hpp',
+127 silly gunzTarPerm   436,
+127 silly gunzTarPerm   420 ]
+128 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/lock.hpp
+129 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/lock.hpp',
+129 silly gunzTarPerm   436,
+129 silly gunzTarPerm   420 ]
+130 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/log.hpp
+131 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/log.hpp', 436, 420 ]
+132 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/
+133 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/',
+133 silly gunzTarPerm   509,
+133 silly gunzTarPerm   493 ]
+134 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/crypto.h
+135 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/crypto.h',
+135 silly gunzTarPerm   436,
+135 silly gunzTarPerm   420 ]
+136 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/des.h
+137 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/des.h',
+137 silly gunzTarPerm   436,
+137 silly gunzTarPerm   420 ]
+138 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/des_old.h
+139 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/des_old.h',
+139 silly gunzTarPerm   436,
+139 silly gunzTarPerm   420 ]
+140 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/engine.h
+141 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/engine.h',
+141 silly gunzTarPerm   436,
+141 silly gunzTarPerm   420 ]
+142 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/err.h
+143 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/err.h',
+143 silly gunzTarPerm   436,
+143 silly gunzTarPerm   420 ]
+144 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/evp.h
+145 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/evp.h',
+145 silly gunzTarPerm   436,
+145 silly gunzTarPerm   420 ]
+146 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/hmac.h
+147 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/hmac.h',
+147 silly gunzTarPerm   436,
+147 silly gunzTarPerm   420 ]
+148 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/lhash.h
+149 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/lhash.h',
+149 silly gunzTarPerm   436,
+149 silly gunzTarPerm   420 ]
+150 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/md4.h
+151 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/md4.h',
+151 silly gunzTarPerm   436,
+151 silly gunzTarPerm   420 ]
+152 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/md5.h
+153 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/md5.h',
+153 silly gunzTarPerm   436,
+153 silly gunzTarPerm   420 ]
+154 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/objects.h
+155 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/objects.h',
+155 silly gunzTarPerm   436,
+155 silly gunzTarPerm   420 ]
+156 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/opensslv.h
+157 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/opensslv.h',
+157 silly gunzTarPerm   436,
+157 silly gunzTarPerm   420 ]
+158 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/pem.h
+159 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/pem.h',
+159 silly gunzTarPerm   436,
+159 silly gunzTarPerm   420 ]
+160 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/pkcs12.h
+161 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/pkcs12.h',
+161 silly gunzTarPerm   436,
+161 silly gunzTarPerm   420 ]
+162 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/prefix_crypto.h
+163 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/prefix_crypto.h',
+163 silly gunzTarPerm   436,
+163 silly gunzTarPerm   420 ]
+164 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/prefix_ssl.h
+165 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/prefix_ssl.h',
+165 silly gunzTarPerm   436,
+165 silly gunzTarPerm   420 ]
+166 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/rand.h
+167 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/rand.h',
+167 silly gunzTarPerm   436,
+167 silly gunzTarPerm   420 ]
+168 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/rsa.h
+169 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/rsa.h',
+169 silly gunzTarPerm   436,
+169 silly gunzTarPerm   420 ]
+170 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/sha.h
+171 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/sha.h',
+171 silly gunzTarPerm   436,
+171 silly gunzTarPerm   420 ]
+172 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/ssl.h
+173 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/ssl.h',
+173 silly gunzTarPerm   436,
+173 silly gunzTarPerm   420 ]
+174 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/transport_types.h
+175 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/transport_types.h',
+175 silly gunzTarPerm   436,
+175 silly gunzTarPerm   420 ]
+176 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/x509.h
+177 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/x509.h',
+177 silly gunzTarPerm   436,
+177 silly gunzTarPerm   420 ]
+178 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/openssl/x509v3.h
+179 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/openssl/x509v3.h',
+179 silly gunzTarPerm   436,
+179 silly gunzTarPerm   420 ]
+180 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/socket_wrapper.hpp
+181 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/socket_wrapper.hpp',
+181 silly gunzTarPerm   436,
+181 silly gunzTarPerm   420 ]
+182 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/timer.hpp
+183 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/timer.hpp',
+183 silly gunzTarPerm   436,
+183 silly gunzTarPerm   420 ]
+184 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/yassl.hpp
+185 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/yassl.hpp',
+185 silly gunzTarPerm   436,
+185 silly gunzTarPerm   420 ]
+186 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/yassl_error.hpp
+187 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/yassl_error.hpp',
+187 silly gunzTarPerm   436,
+187 silly gunzTarPerm   420 ]
+188 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/yassl_imp.hpp
+189 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/yassl_imp.hpp',
+189 silly gunzTarPerm   436,
+189 silly gunzTarPerm   420 ]
+190 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/yassl_int.hpp
+191 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/yassl_int.hpp',
+191 silly gunzTarPerm   436,
+191 silly gunzTarPerm   420 ]
+192 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/include/yassl_types.hpp
+193 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/include/yassl_types.hpp',
+193 silly gunzTarPerm   436,
+193 silly gunzTarPerm   420 ]
+194 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/
+195 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/', 509, 493 ]
+196 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/buffer.cpp
+197 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/buffer.cpp', 436, 420 ]
+198 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/cert_wrapper.cpp
+199 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/cert_wrapper.cpp',
+199 silly gunzTarPerm   436,
+199 silly gunzTarPerm   420 ]
+200 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/crypto_wrapper.cpp
+201 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/crypto_wrapper.cpp',
+201 silly gunzTarPerm   436,
+201 silly gunzTarPerm   420 ]
+202 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/handshake.cpp
+203 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/handshake.cpp',
+203 silly gunzTarPerm   436,
+203 silly gunzTarPerm   420 ]
+204 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/lock.cpp
+205 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/lock.cpp', 436, 420 ]
+206 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/log.cpp
+207 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/log.cpp', 436, 420 ]
+208 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/socket_wrapper.cpp
+209 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/socket_wrapper.cpp',
+209 silly gunzTarPerm   436,
+209 silly gunzTarPerm   420 ]
+210 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/ssl.cpp
+211 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/ssl.cpp', 436, 420 ]
+212 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/timer.cpp
+213 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/timer.cpp', 436, 420 ]
+214 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/yassl.cpp
+215 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/yassl.cpp', 436, 420 ]
+216 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/yassl_error.cpp
+217 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/yassl_error.cpp',
+217 silly gunzTarPerm   436,
+217 silly gunzTarPerm   420 ]
+218 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/yassl_imp.cpp
+219 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/yassl_imp.cpp',
+219 silly gunzTarPerm   436,
+219 silly gunzTarPerm   420 ]
+220 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/src/yassl_int.cpp
+221 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/src/yassl_int.cpp',
+221 silly gunzTarPerm   436,
+221 silly gunzTarPerm   420 ]
+222 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/
+223 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/', 509, 493 ]
+224 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/COPYING
+225 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/COPYING',
+225 silly gunzTarPerm   436,
+225 silly gunzTarPerm   420 ]
+226 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/INSTALL
+227 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/INSTALL',
+227 silly gunzTarPerm   436,
+227 silly gunzTarPerm   420 ]
+228 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/README
+229 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/README', 436, 420 ]
+230 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/
+231 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/',
+231 silly gunzTarPerm   509,
+231 silly gunzTarPerm   493 ]
+232 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/aes.hpp
+233 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/aes.hpp',
+233 silly gunzTarPerm   436,
+233 silly gunzTarPerm   420 ]
+234 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/algebra.hpp
+235 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/algebra.hpp',
+235 silly gunzTarPerm   436,
+235 silly gunzTarPerm   420 ]
+236 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/arc4.hpp
+237 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/arc4.hpp',
+237 silly gunzTarPerm   436,
+237 silly gunzTarPerm   420 ]
+238 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/asn.hpp
+239 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/asn.hpp',
+239 silly gunzTarPerm   436,
+239 silly gunzTarPerm   420 ]
+240 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/block.hpp
+241 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/block.hpp',
+241 silly gunzTarPerm   436,
+241 silly gunzTarPerm   420 ]
+242 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/blowfish.hpp
+243 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/blowfish.hpp',
+243 silly gunzTarPerm   436,
+243 silly gunzTarPerm   420 ]
+244 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/coding.hpp
+245 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/coding.hpp',
+245 silly gunzTarPerm   436,
+245 silly gunzTarPerm   420 ]
+246 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/des.hpp
+247 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/des.hpp',
+247 silly gunzTarPerm   436,
+247 silly gunzTarPerm   420 ]
+248 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/dh.hpp
+249 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/dh.hpp',
+249 silly gunzTarPerm   436,
+249 silly gunzTarPerm   420 ]
+250 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/dsa.hpp
+251 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/dsa.hpp',
+251 silly gunzTarPerm   436,
+251 silly gunzTarPerm   420 ]
+252 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/error.hpp
+253 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/error.hpp',
+253 silly gunzTarPerm   436,
+253 silly gunzTarPerm   420 ]
+254 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/file.hpp
+255 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/file.hpp',
+255 silly gunzTarPerm   436,
+255 silly gunzTarPerm   420 ]
+256 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/hash.hpp
+257 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/hash.hpp',
+257 silly gunzTarPerm   436,
+257 silly gunzTarPerm   420 ]
+258 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/hc128.hpp
+259 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/hc128.hpp',
+259 silly gunzTarPerm   436,
+259 silly gunzTarPerm   420 ]
+260 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/hmac.hpp
+261 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/hmac.hpp',
+261 silly gunzTarPerm   436,
+261 silly gunzTarPerm   420 ]
+262 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/integer.hpp
+263 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/integer.hpp',
+263 silly gunzTarPerm   436,
+263 silly gunzTarPerm   420 ]
+264 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/md2.hpp
+265 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/md2.hpp',
+265 silly gunzTarPerm   436,
+265 silly gunzTarPerm   420 ]
+266 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/md4.hpp
+267 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/md4.hpp',
+267 silly gunzTarPerm   436,
+267 silly gunzTarPerm   420 ]
+268 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/md5.hpp
+269 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/md5.hpp',
+269 silly gunzTarPerm   436,
+269 silly gunzTarPerm   420 ]
+270 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/misc.hpp
+271 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/misc.hpp',
+271 silly gunzTarPerm   436,
+271 silly gunzTarPerm   420 ]
+272 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/modarith.hpp
+273 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/modarith.hpp',
+273 silly gunzTarPerm   436,
+273 silly gunzTarPerm   420 ]
+274 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/modes.hpp
+275 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/modes.hpp',
+275 silly gunzTarPerm   436,
+275 silly gunzTarPerm   420 ]
+276 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/pwdbased.hpp
+277 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/pwdbased.hpp',
+277 silly gunzTarPerm   436,
+277 silly gunzTarPerm   420 ]
+278 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/rabbit.hpp
+279 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/rabbit.hpp',
+279 silly gunzTarPerm   436,
+279 silly gunzTarPerm   420 ]
+280 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/random.hpp
+281 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/random.hpp',
+281 silly gunzTarPerm   436,
+281 silly gunzTarPerm   420 ]
+282 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/ripemd.hpp
+283 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/ripemd.hpp',
+283 silly gunzTarPerm   436,
+283 silly gunzTarPerm   420 ]
+284 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/rsa.hpp
+285 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/rsa.hpp',
+285 silly gunzTarPerm   436,
+285 silly gunzTarPerm   420 ]
+286 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/runtime.hpp
+287 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/runtime.hpp',
+287 silly gunzTarPerm   436,
+287 silly gunzTarPerm   420 ]
+288 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/sha.hpp
+289 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/sha.hpp',
+289 silly gunzTarPerm   436,
+289 silly gunzTarPerm   420 ]
+290 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/twofish.hpp
+291 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/twofish.hpp',
+291 silly gunzTarPerm   436,
+291 silly gunzTarPerm   420 ]
+292 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/type_traits.hpp
+293 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/type_traits.hpp',
+293 silly gunzTarPerm   436,
+293 silly gunzTarPerm   420 ]
+294 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/include/types.hpp
+295 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/include/types.hpp',
+295 silly gunzTarPerm   436,
+295 silly gunzTarPerm   420 ]
+296 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/mySTL/
+297 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/mySTL/', 509, 493 ]
+298 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/mySTL/algorithm.hpp
+299 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/mySTL/algorithm.hpp',
+299 silly gunzTarPerm   436,
+299 silly gunzTarPerm   420 ]
+300 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/mySTL/helpers.hpp
+301 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/mySTL/helpers.hpp',
+301 silly gunzTarPerm   436,
+301 silly gunzTarPerm   420 ]
+302 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/mySTL/list.hpp
+303 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/mySTL/list.hpp',
+303 silly gunzTarPerm   436,
+303 silly gunzTarPerm   420 ]
+304 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/mySTL/memory.hpp
+305 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/mySTL/memory.hpp',
+305 silly gunzTarPerm   436,
+305 silly gunzTarPerm   420 ]
+306 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/mySTL/memory_array.hpp
+307 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/mySTL/memory_array.hpp',
+307 silly gunzTarPerm   436,
+307 silly gunzTarPerm   420 ]
+308 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/mySTL/pair.hpp
+309 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/mySTL/pair.hpp',
+309 silly gunzTarPerm   436,
+309 silly gunzTarPerm   420 ]
+310 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/mySTL/stdexcept.hpp
+311 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/mySTL/stdexcept.hpp',
+311 silly gunzTarPerm   436,
+311 silly gunzTarPerm   420 ]
+312 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/mySTL/vector.hpp
+313 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/mySTL/vector.hpp',
+313 silly gunzTarPerm   436,
+313 silly gunzTarPerm   420 ]
+314 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/
+315 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/', 509, 493 ]
+316 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/aes.cpp
+317 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/aes.cpp',
+317 silly gunzTarPerm   436,
+317 silly gunzTarPerm   420 ]
+318 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/aestables.cpp
+319 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/aestables.cpp',
+319 silly gunzTarPerm   436,
+319 silly gunzTarPerm   420 ]
+320 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/algebra.cpp
+321 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/algebra.cpp',
+321 silly gunzTarPerm   436,
+321 silly gunzTarPerm   420 ]
+322 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/arc4.cpp
+323 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/arc4.cpp',
+323 silly gunzTarPerm   436,
+323 silly gunzTarPerm   420 ]
+324 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/asn.cpp
+325 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/asn.cpp',
+325 silly gunzTarPerm   436,
+325 silly gunzTarPerm   420 ]
+326 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/bftables.cpp
+327 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/bftables.cpp',
+327 silly gunzTarPerm   436,
+327 silly gunzTarPerm   420 ]
+328 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/blowfish.cpp
+329 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/blowfish.cpp',
+329 silly gunzTarPerm   436,
+329 silly gunzTarPerm   420 ]
+330 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/coding.cpp
+331 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/coding.cpp',
+331 silly gunzTarPerm   436,
+331 silly gunzTarPerm   420 ]
+332 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/des.cpp
+333 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/des.cpp',
+333 silly gunzTarPerm   436,
+333 silly gunzTarPerm   420 ]
+334 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/dh.cpp
+335 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/dh.cpp',
+335 silly gunzTarPerm   436,
+335 silly gunzTarPerm   420 ]
+336 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/dsa.cpp
+337 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/dsa.cpp',
+337 silly gunzTarPerm   436,
+337 silly gunzTarPerm   420 ]
+338 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/file.cpp
+339 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/file.cpp',
+339 silly gunzTarPerm   436,
+339 silly gunzTarPerm   420 ]
+340 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/hash.cpp
+341 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/hash.cpp',
+341 silly gunzTarPerm   436,
+341 silly gunzTarPerm   420 ]
+342 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/hc128.cpp
+343 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/hc128.cpp',
+343 silly gunzTarPerm   436,
+343 silly gunzTarPerm   420 ]
+344 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/integer.cpp
+345 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/integer.cpp',
+345 silly gunzTarPerm   436,
+345 silly gunzTarPerm   420 ]
+346 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/md2.cpp
+347 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/md2.cpp',
+347 silly gunzTarPerm   436,
+347 silly gunzTarPerm   420 ]
+348 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/md4.cpp
+349 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/md4.cpp',
+349 silly gunzTarPerm   436,
+349 silly gunzTarPerm   420 ]
+350 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/md5.cpp
+351 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/md5.cpp',
+351 silly gunzTarPerm   436,
+351 silly gunzTarPerm   420 ]
+352 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/misc.cpp
+353 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/misc.cpp',
+353 silly gunzTarPerm   436,
+353 silly gunzTarPerm   420 ]
+354 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/rabbit.cpp
+355 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/rabbit.cpp',
+355 silly gunzTarPerm   436,
+355 silly gunzTarPerm   420 ]
+356 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/random.cpp
+357 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/random.cpp',
+357 silly gunzTarPerm   436,
+357 silly gunzTarPerm   420 ]
+358 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/ripemd.cpp
+359 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/ripemd.cpp',
+359 silly gunzTarPerm   436,
+359 silly gunzTarPerm   420 ]
+360 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/rsa.cpp
+361 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/rsa.cpp',
+361 silly gunzTarPerm   436,
+361 silly gunzTarPerm   420 ]
+362 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/sha.cpp
+363 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/sha.cpp',
+363 silly gunzTarPerm   436,
+363 silly gunzTarPerm   420 ]
+364 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/tftables.cpp
+365 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/tftables.cpp',
+365 silly gunzTarPerm   436,
+365 silly gunzTarPerm   420 ]
+366 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/src/twofish.cpp
+367 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/src/twofish.cpp',
+367 silly gunzTarPerm   436,
+367 silly gunzTarPerm   420 ]
+368 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/taocrypt/taocrypt.gyp
+369 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/taocrypt/taocrypt.gyp',
+369 silly gunzTarPerm   436,
+369 silly gunzTarPerm   420 ]
+370 silly gunzTarPerm extractEntry deps/libmariadbclient/extra/yassl/yassl.gyp
+371 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/extra/yassl/yassl.gyp', 436, 420 ]
+372 silly gunzTarPerm extractEntry deps/libmariadbclient/include/
+373 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/', 509, 493 ]
+374 silly gunzTarPerm extractEntry deps/libmariadbclient/include/big_endian.h
+375 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/big_endian.h', 436, 420 ]
+376 silly gunzTarPerm extractEntry deps/libmariadbclient/include/byte_order_generic.h
+377 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/byte_order_generic.h',
+377 silly gunzTarPerm   436,
+377 silly gunzTarPerm   420 ]
+378 silly gunzTarPerm extractEntry deps/libmariadbclient/include/byte_order_generic_x86.h
+379 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/byte_order_generic_x86.h',
+379 silly gunzTarPerm   436,
+379 silly gunzTarPerm   420 ]
+380 silly gunzTarPerm extractEntry deps/libmariadbclient/include/byte_order_generic_x86_64.h
+381 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/byte_order_generic_x86_64.h',
+381 silly gunzTarPerm   436,
+381 silly gunzTarPerm   420 ]
+382 silly gunzTarPerm extractEntry deps/libmariadbclient/include/decimal.h
+383 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/decimal.h', 436, 420 ]
+384 silly gunzTarPerm extractEntry deps/libmariadbclient/include/errmsg.h
+385 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/errmsg.h', 436, 420 ]
+386 silly gunzTarPerm extractEntry deps/libmariadbclient/include/hash.h
+387 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/hash.h', 436, 420 ]
+388 silly gunzTarPerm extractEntry deps/libmariadbclient/include/little_endian.h
+389 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/little_endian.h', 436, 420 ]
+390 silly gunzTarPerm extractEntry deps/libmariadbclient/include/m_ctype.h
+391 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/m_ctype.h', 436, 420 ]
+392 silly gunzTarPerm extractEntry deps/libmariadbclient/include/m_string.h
+393 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/m_string.h', 436, 420 ]
+394 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_aes.h
+395 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_aes.h', 436, 420 ]
+396 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_alarm.h
+397 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_alarm.h', 436, 420 ]
+398 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_alloc.h
+399 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_alloc.h', 436, 420 ]
+400 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_attribute.h
+401 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_attribute.h', 436, 420 ]
+402 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_base.h
+403 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_base.h', 436, 420 ]
+404 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_byteorder.h
+405 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_byteorder.h', 436, 420 ]
+406 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_compiler.h
+407 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_compiler.h', 436, 420 ]
+408 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_context.h
+409 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_context.h', 436, 420 ]
+410 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_crypt.h
+411 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_crypt.h', 436, 420 ]
+412 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_dbug.h
+413 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_dbug.h', 436, 420 ]
+414 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_default.h
+415 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_default.h', 436, 420 ]
+416 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_dir.h
+417 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_dir.h', 436, 420 ]
+418 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_global.h
+419 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_global.h', 436, 420 ]
+420 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_handler_errors.h
+421 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_handler_errors.h', 436, 420 ]
+422 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_list.h
+423 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_list.h', 436, 420 ]
+424 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_md5.h
+425 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_md5.h', 436, 420 ]
+426 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_net.h
+427 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_net.h', 436, 420 ]
+428 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_pthread.h
+429 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_pthread.h', 436, 420 ]
+430 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_rnd.h
+431 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_rnd.h', 436, 420 ]
+432 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_stacktrace.h
+433 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_stacktrace.h', 436, 420 ]
+434 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_sys.h
+435 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_sys.h', 436, 420 ]
+436 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_time.h
+437 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_time.h', 436, 420 ]
+438 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_uctype.h
+439 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_uctype.h', 436, 420 ]
+440 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_valgrind.h
+441 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_valgrind.h', 436, 420 ]
+442 silly gunzTarPerm extractEntry deps/libmariadbclient/include/my_xml.h
+443 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/my_xml.h', 436, 420 ]
+444 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql.h
+445 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql.h', 436, 420 ]
+446 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/
+447 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/', 509, 493 ]
+448 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/auth_dialog_client.h
+449 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/auth_dialog_client.h',
+449 silly gunzTarPerm   436,
+449 silly gunzTarPerm   420 ]
+450 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/client_plugin.h
+451 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/client_plugin.h',
+451 silly gunzTarPerm   436,
+451 silly gunzTarPerm   420 ]
+452 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/plugin.h
+453 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/plugin.h', 436, 420 ]
+454 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/plugin_auth_common.h
+455 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/plugin_auth_common.h',
+455 silly gunzTarPerm   436,
+455 silly gunzTarPerm   420 ]
+456 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/plugin_ftparser.h
+457 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/plugin_ftparser.h',
+457 silly gunzTarPerm   436,
+457 silly gunzTarPerm   420 ]
+458 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/psi/
+459 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/psi/', 509, 493 ]
+460 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/psi/mysql_file.h
+461 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/psi/mysql_file.h',
+461 silly gunzTarPerm   436,
+461 silly gunzTarPerm   420 ]
+462 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/psi/mysql_socket.h
+463 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/psi/mysql_socket.h',
+463 silly gunzTarPerm   436,
+463 silly gunzTarPerm   420 ]
+464 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/psi/mysql_stage.h
+465 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/psi/mysql_stage.h',
+465 silly gunzTarPerm   436,
+465 silly gunzTarPerm   420 ]
+466 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/psi/mysql_thread.h
+467 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/psi/mysql_thread.h',
+467 silly gunzTarPerm   436,
+467 silly gunzTarPerm   420 ]
+468 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/psi/psi.h
+469 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/psi/psi.h', 436, 420 ]
+470 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_debug_sync.h
+471 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_debug_sync.h',
+471 silly gunzTarPerm   436,
+471 silly gunzTarPerm   420 ]
+472 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_encryption.h
+473 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_encryption.h',
+473 silly gunzTarPerm   436,
+473 silly gunzTarPerm   420 ]
+474 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_encryption_scheme.h
+475 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_encryption_scheme.h',
+475 silly gunzTarPerm   436,
+475 silly gunzTarPerm   420 ]
+476 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_kill_statement.h
+477 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_kill_statement.h',
+477 silly gunzTarPerm   436,
+477 silly gunzTarPerm   420 ]
+478 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_logger.h
+479 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_logger.h',
+479 silly gunzTarPerm   436,
+479 silly gunzTarPerm   420 ]
+480 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_md5.h
+481 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_md5.h', 436, 420 ]
+482 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_my_snprintf.h
+483 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_my_snprintf.h',
+483 silly gunzTarPerm   436,
+483 silly gunzTarPerm   420 ]
+484 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_progress_report.h
+485 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_progress_report.h',
+485 silly gunzTarPerm   436,
+485 silly gunzTarPerm   420 ]
+486 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_sha1.h
+487 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_sha1.h',
+487 silly gunzTarPerm   436,
+487 silly gunzTarPerm   420 ]
+488 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_thd_alloc.h
+489 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_thd_alloc.h',
+489 silly gunzTarPerm   436,
+489 silly gunzTarPerm   420 ]
+490 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_thd_autoinc.h
+491 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_thd_autoinc.h',
+491 silly gunzTarPerm   436,
+491 silly gunzTarPerm   420 ]
+492 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_thd_error_context.h
+493 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_thd_error_context.h',
+493 silly gunzTarPerm   436,
+493 silly gunzTarPerm   420 ]
+494 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_thd_specifics.h
+495 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_thd_specifics.h',
+495 silly gunzTarPerm   436,
+495 silly gunzTarPerm   420 ]
+496 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_thd_timezone.h
+497 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_thd_timezone.h',
+497 silly gunzTarPerm   436,
+497 silly gunzTarPerm   420 ]
+498 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/service_thd_wait.h
+499 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/service_thd_wait.h',
+499 silly gunzTarPerm   436,
+499 silly gunzTarPerm   420 ]
+500 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql/services.h
+501 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql/services.h', 436, 420 ]
+502 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql_async.h
+503 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql_async.h', 436, 420 ]
+504 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql_com.h
+505 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql_com.h', 436, 420 ]
+506 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql_time.h
+507 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql_time.h', 436, 420 ]
+508 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysql_version.h
+509 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysql_version.h', 436, 420 ]
+510 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysqld_error.h
+511 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysqld_error.h', 436, 420 ]
+512 silly gunzTarPerm extractEntry deps/libmariadbclient/include/mysys_err.h
+513 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/mysys_err.h', 436, 420 ]
+514 silly gunzTarPerm extractEntry deps/libmariadbclient/include/password.h
+515 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/password.h', 436, 420 ]
+516 silly gunzTarPerm extractEntry deps/libmariadbclient/include/probes_mysql.h
+517 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/probes_mysql.h', 436, 420 ]
+518 silly gunzTarPerm extractEntry deps/libmariadbclient/include/probes_mysql_nodtrace.h
+519 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/probes_mysql_nodtrace.h',
+519 silly gunzTarPerm   436,
+519 silly gunzTarPerm   420 ]
+520 silly gunzTarPerm extractEntry deps/libmariadbclient/include/rijndael.h
+521 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/rijndael.h', 436, 420 ]
+522 silly gunzTarPerm extractEntry deps/libmariadbclient/include/sha1.h
+523 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/sha1.h', 436, 420 ]
+524 silly gunzTarPerm extractEntry deps/libmariadbclient/include/sha2.h
+525 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/sha2.h', 436, 420 ]
+526 silly gunzTarPerm extractEntry deps/libmariadbclient/include/snprintf.h
+527 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/snprintf.h', 436, 420 ]
+528 silly gunzTarPerm extractEntry deps/libmariadbclient/include/sql_common.h
+529 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/sql_common.h', 436, 420 ]
+530 silly gunzTarPerm extractEntry deps/libmariadbclient/include/thr_alarm.h
+531 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/thr_alarm.h', 436, 420 ]
+532 silly gunzTarPerm extractEntry deps/libmariadbclient/include/typelib.h
+533 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/typelib.h', 436, 420 ]
+534 silly gunzTarPerm extractEntry deps/libmariadbclient/include/violite.h
+535 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/include/violite.h', 436, 420 ]
+536 silly gunzTarPerm extractEntry deps/libmariadbclient/libmysql/
+537 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/libmysql/', 509, 493 ]
+538 silly gunzTarPerm extractEntry deps/libmariadbclient/libmysql/client_settings.h
+539 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/libmysql/client_settings.h', 436, 420 ]
+540 silly gunzTarPerm extractEntry deps/libmariadbclient/libmysql/clientlib.gyp
+541 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/libmysql/clientlib.gyp', 436, 420 ]
+542 silly gunzTarPerm extractEntry deps/libmariadbclient/libmysql/errmsg.c
+543 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/libmysql/errmsg.c', 436, 420 ]
+544 silly gunzTarPerm extractEntry deps/libmariadbclient/libmysql/libmysql.c
+545 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/libmysql/libmysql.c', 436, 420 ]
+546 silly gunzTarPerm extractEntry deps/libmariadbclient/libmysql/snprintf.c
+547 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/libmysql/snprintf.c', 436, 420 ]
+548 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/
+549 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/', 509, 493 ]
+550 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/array.c
+551 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/array.c', 436, 420 ]
+552 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/charset-def.c
+553 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/charset-def.c', 436, 420 ]
+554 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/charset.c
+555 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/charset.c', 436, 420 ]
+556 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/errors.c
+557 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/errors.c', 436, 420 ]
+558 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/hash.c
+559 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/hash.c', 436, 420 ]
+560 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/list.c
+561 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/list.c', 436, 420 ]
+562 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mf_arr_appstr.c
+563 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mf_arr_appstr.c', 436, 420 ]
+564 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mf_dirname.c
+565 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mf_dirname.c', 436, 420 ]
+566 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mf_fn_ext.c
+567 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mf_fn_ext.c', 436, 420 ]
+568 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mf_format.c
+569 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mf_format.c', 436, 420 ]
+570 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mf_loadpath.c
+571 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mf_loadpath.c', 436, 420 ]
+572 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mf_pack.c
+573 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mf_pack.c', 436, 420 ]
+574 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mf_path.c
+575 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mf_path.c', 436, 420 ]
+576 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mf_qsort.c
+577 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mf_qsort.c', 436, 420 ]
+578 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mf_unixpath.c
+579 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mf_unixpath.c', 436, 420 ]
+580 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mf_wcomp.c
+581 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mf_wcomp.c', 436, 420 ]
+582 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mulalloc.c
+583 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mulalloc.c', 436, 420 ]
+584 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_access.c
+585 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_access.c', 436, 420 ]
+586 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_alloc.c
+587 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_alloc.c', 436, 420 ]
+588 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_compress.c
+589 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_compress.c', 436, 420 ]
+590 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_context.c
+591 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_context.c', 436, 420 ]
+592 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_default.c
+593 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_default.c', 436, 420 ]
+594 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_div.c
+595 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_div.c', 436, 420 ]
+596 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_error.c
+597 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_error.c', 436, 420 ]
+598 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_fopen.c
+599 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_fopen.c', 436, 420 ]
+600 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_fstream.c
+601 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_fstream.c', 436, 420 ]
+602 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_getsystime.c
+603 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_getsystime.c', 436, 420 ]
+604 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_getwd.c
+605 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_getwd.c', 436, 420 ]
+606 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_init.c
+607 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_init.c', 436, 420 ]
+608 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_lib.c
+609 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_lib.c', 436, 420 ]
+610 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_malloc.c
+611 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_malloc.c', 436, 420 ]
+612 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_mess.c
+613 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_mess.c', 436, 420 ]
+614 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_once.c
+615 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_once.c', 436, 420 ]
+616 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_open.c
+617 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_open.c', 436, 420 ]
+618 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_pthread.c
+619 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_pthread.c', 436, 420 ]
+620 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_read.c
+621 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_read.c', 436, 420 ]
+622 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_rnd.c
+623 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_rnd.c', 436, 420 ]
+624 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_seek.c
+625 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_seek.c', 436, 420 ]
+626 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_static.c
+627 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_static.c', 436, 420 ]
+628 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_static.h
+629 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_static.h', 436, 420 ]
+630 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_symlink.c
+631 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_symlink.c', 436, 420 ]
+632 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_symlink2.c
+633 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_symlink2.c', 436, 420 ]
+634 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_sync.c
+635 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_sync.c', 436, 420 ]
+636 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_thr_init.c
+637 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_thr_init.c', 436, 420 ]
+638 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_wincond.c
+639 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_wincond.c', 436, 420 ]
+640 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_windac.c
+641 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_windac.c', 436, 420 ]
+642 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_winerr.c
+643 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_winerr.c', 436, 420 ]
+644 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_winfile.c
+645 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_winfile.c', 436, 420 ]
+646 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_winthread.c
+647 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_winthread.c', 436, 420 ]
+648 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/my_write.c
+649 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/my_write.c', 436, 420 ]
+650 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mysys.gyp
+651 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mysys.gyp', 436, 420 ]
+652 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/mysys_priv.h
+653 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/mysys_priv.h', 436, 420 ]
+654 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/safemalloc.c
+655 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/safemalloc.c', 436, 420 ]
+656 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/string.c
+657 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/string.c', 436, 420 ]
+658 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/thr_mutex.c
+659 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/thr_mutex.c', 436, 420 ]
+660 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys/typelib.c
+661 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys/typelib.c', 436, 420 ]
+662 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys_ssl/
+663 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys_ssl/', 509, 493 ]
+664 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys_ssl/my_aes.cc
+665 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys_ssl/my_aes.cc', 436, 420 ]
+666 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys_ssl/my_crypt.h
+667 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys_ssl/my_crypt.h', 436, 420 ]
+668 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys_ssl/my_md5.cc
+669 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys_ssl/my_md5.cc', 436, 420 ]
+670 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys_ssl/my_rnd.cc
+671 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys_ssl/my_rnd.cc', 436, 420 ]
+672 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys_ssl/my_sha1.cc
+673 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys_ssl/my_sha1.cc', 436, 420 ]
+674 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys_ssl/my_sha2.cc
+675 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys_ssl/my_sha2.cc', 436, 420 ]
+676 silly gunzTarPerm extractEntry deps/libmariadbclient/mysys_ssl/mysys_ssl.gyp
+677 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/mysys_ssl/mysys_ssl.gyp', 436, 420 ]
+678 silly gunzTarPerm extractEntry deps/libmariadbclient/sql-common/
+679 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/sql-common/', 509, 493 ]
+680 silly gunzTarPerm extractEntry deps/libmariadbclient/sql-common/client.c
+681 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/sql-common/client.c', 436, 420 ]
+682 silly gunzTarPerm extractEntry deps/libmariadbclient/sql-common/client_plugin.c
+683 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/sql-common/client_plugin.c', 436, 420 ]
+684 silly gunzTarPerm extractEntry deps/libmariadbclient/sql-common/my_time.c
+685 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/sql-common/my_time.c', 436, 420 ]
+686 silly gunzTarPerm extractEntry deps/libmariadbclient/sql-common/mysql_async.c
+687 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/sql-common/mysql_async.c', 436, 420 ]
+688 silly gunzTarPerm extractEntry deps/libmariadbclient/sql-common/pack.c
+689 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/sql-common/pack.c', 436, 420 ]
+690 silly gunzTarPerm extractEntry deps/libmariadbclient/sql/
+691 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/sql/', 509, 493 ]
+692 silly gunzTarPerm extractEntry deps/libmariadbclient/sql/net_serv.cc
+693 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/sql/net_serv.cc', 436, 420 ]
+694 silly gunzTarPerm extractEntry deps/libmariadbclient/sql/password.c
+695 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/sql/password.c', 436, 420 ]
+696 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/
+697 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/', 509, 493 ]
+698 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/bchange.c
+699 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/bchange.c', 436, 420 ]
+700 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/bmove_upp.c
+701 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/bmove_upp.c', 436, 420 ]
+702 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-big5.c
+703 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-big5.c', 436, 420 ]
+704 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-bin.c
+705 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-bin.c', 436, 420 ]
+706 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-cp932.c
+707 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-cp932.c', 436, 420 ]
+708 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-czech.c
+709 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-czech.c', 436, 420 ]
+710 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-euc_kr.c
+711 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-euc_kr.c', 436, 420 ]
+712 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-eucjpms.c
+713 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-eucjpms.c', 436, 420 ]
+714 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-extra.c
+715 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-extra.c', 436, 420 ]
+716 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-gb2312.c
+717 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-gb2312.c', 436, 420 ]
+718 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-gbk.c
+719 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-gbk.c', 436, 420 ]
+720 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-latin1.c
+721 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-latin1.c', 436, 420 ]
+722 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-mb.c
+723 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-mb.c', 436, 420 ]
+724 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-mb.ic
+725 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-mb.ic', 436, 420 ]
+726 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-simple.c
+727 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-simple.c', 436, 420 ]
+728 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-sjis.c
+729 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-sjis.c', 436, 420 ]
+730 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-tis620.c
+731 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-tis620.c', 436, 420 ]
+732 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-uca.c
+733 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-uca.c', 436, 420 ]
+734 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-ucs2.c
+735 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-ucs2.c', 436, 420 ]
+736 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-ujis.c
+737 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-ujis.c', 436, 420 ]
+738 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-utf8.c
+739 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-utf8.c', 436, 420 ]
+740 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype-win1250ch.c
+741 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype-win1250ch.c', 436, 420 ]
+742 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/ctype.c
+743 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/ctype.c', 436, 420 ]
+744 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/dtoa.c
+745 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/dtoa.c', 436, 420 ]
+746 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/int2str.c
+747 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/int2str.c', 436, 420 ]
+748 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/is_prefix.c
+749 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/is_prefix.c', 436, 420 ]
+750 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/llstr.c
+751 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/llstr.c', 436, 420 ]
+752 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/longlong2str.c
+753 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/longlong2str.c', 436, 420 ]
+754 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/my_strtoll10.c
+755 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/my_strtoll10.c', 436, 420 ]
+756 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/my_vsnprintf.c
+757 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/my_vsnprintf.c', 436, 420 ]
+758 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/str2int.c
+759 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/str2int.c', 436, 420 ]
+760 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/str_alloc.c
+761 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/str_alloc.c', 436, 420 ]
+762 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strcend.c
+763 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strcend.c', 436, 420 ]
+764 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strcoll.ic
+765 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strcoll.ic', 436, 420 ]
+766 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strcont.c
+767 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strcont.c', 436, 420 ]
+768 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strend.c
+769 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strend.c', 436, 420 ]
+770 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strfill.c
+771 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strfill.c', 436, 420 ]
+772 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strings.gyp
+773 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strings.gyp', 436, 420 ]
+774 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strings_def.h
+775 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strings_def.h', 436, 420 ]
+776 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strmake.c
+777 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strmake.c', 436, 420 ]
+778 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strmov.c
+779 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strmov.c', 436, 420 ]
+780 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strmov_overlapp.c
+781 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strmov_overlapp.c', 436, 420 ]
+782 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strnlen.c
+783 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strnlen.c', 436, 420 ]
+784 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strnmov.c
+785 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strnmov.c', 436, 420 ]
+786 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strxmov.c
+787 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strxmov.c', 436, 420 ]
+788 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/strxnmov.c
+789 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/strxnmov.c', 436, 420 ]
+790 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/t_ctype.h
+791 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/t_ctype.h', 436, 420 ]
+792 silly gunzTarPerm extractEntry deps/libmariadbclient/strings/xml.c
+793 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/strings/xml.c', 436, 420 ]
+794 silly gunzTarPerm extractEntry deps/libmariadbclient/vio/
+795 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/vio/', 509, 493 ]
+796 silly gunzTarPerm extractEntry deps/libmariadbclient/vio/vio.c
+797 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/vio/vio.c', 436, 420 ]
+798 silly gunzTarPerm extractEntry deps/libmariadbclient/vio/vio.gyp
+799 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/vio/vio.gyp', 436, 420 ]
+800 silly gunzTarPerm extractEntry deps/libmariadbclient/vio/vio_priv.h
+801 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/vio/vio_priv.h', 436, 420 ]
+802 silly gunzTarPerm extractEntry deps/libmariadbclient/vio/viopipe.c
+803 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/vio/viopipe.c', 436, 420 ]
+804 silly gunzTarPerm extractEntry deps/libmariadbclient/vio/vioshm.c
+805 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/vio/vioshm.c', 436, 420 ]
+806 silly gunzTarPerm extractEntry deps/libmariadbclient/vio/viosocket.c
+807 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/vio/viosocket.c', 436, 420 ]
+808 silly gunzTarPerm extractEntry deps/libmariadbclient/vio/viossl.c
+809 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/vio/viossl.c', 436, 420 ]
+810 silly gunzTarPerm extractEntry deps/libmariadbclient/vio/viosslfactories.c
+811 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/vio/viosslfactories.c', 436, 420 ]
+812 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/
+813 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/', 509, 493 ]
+814 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/ChangeLog
+815 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/ChangeLog', 436, 420 ]
+816 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/FAQ
+817 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/FAQ', 436, 420 ]
+818 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/INDEX
+819 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/INDEX', 436, 420 ]
+820 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/README
+821 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/README', 436, 420 ]
+822 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/adler32.c
+823 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/adler32.c', 436, 420 ]
+824 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/compress.c
+825 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/compress.c', 436, 420 ]
+826 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/crc32.c
+827 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/crc32.c', 436, 420 ]
+828 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/crc32.h
+829 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/crc32.h', 436, 420 ]
+830 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/deflate.c
+831 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/deflate.c', 436, 420 ]
+832 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/deflate.h
+833 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/deflate.h', 436, 420 ]
+834 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/gzclose.c
+835 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/gzclose.c', 436, 420 ]
+836 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/gzguts.h
+837 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/gzguts.h', 436, 420 ]
+838 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/gzlib.c
+839 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/gzlib.c', 436, 420 ]
+840 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/gzread.c
+841 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/gzread.c', 436, 420 ]
+842 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/gzwrite.c
+843 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/gzwrite.c', 436, 420 ]
+844 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/infback.c
+845 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/infback.c', 436, 420 ]
+846 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/inffast.c
+847 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/inffast.c', 436, 420 ]
+848 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/inffast.h
+849 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/inffast.h', 436, 420 ]
+850 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/inffixed.h
+851 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/inffixed.h', 436, 420 ]
+852 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/inflate.c
+853 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/inflate.c', 436, 420 ]
+854 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/inflate.h
+855 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/inflate.h', 436, 420 ]
+856 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/inftrees.c
+857 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/inftrees.c', 436, 420 ]
+858 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/inftrees.h
+859 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/inftrees.h', 436, 420 ]
+860 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/trees.c
+861 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/trees.c', 436, 420 ]
+862 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/trees.h
+863 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/trees.h', 436, 420 ]
+864 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/uncompr.c
+865 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/uncompr.c', 436, 420 ]
+866 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/zconf.h
+867 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/zconf.h', 436, 420 ]
+868 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/zlib.gyp
+869 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/zlib.gyp', 436, 420 ]
+870 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/zlib.h
+871 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/zlib.h', 436, 420 ]
+872 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/zutil.c
+873 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/zutil.c', 436, 420 ]
+874 silly gunzTarPerm extractEntry deps/libmariadbclient/zlib/zutil.h
+875 silly gunzTarPerm modified mode [ 'deps/libmariadbclient/zlib/zutil.h', 436, 420 ]
+876 silly gunzTarPerm extractEntry lib/
+877 silly gunzTarPerm modified mode [ 'lib/', 509, 493 ]
+878 silly gunzTarPerm extractEntry lib/Client.js
+879 silly gunzTarPerm modified mode [ 'lib/Client.js', 436, 420 ]
+880 silly gunzTarPerm extractEntry package.json
+881 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+882 silly gunzTarPerm extractEntry src/
+883 silly gunzTarPerm modified mode [ 'src/', 509, 493 ]
+884 silly gunzTarPerm extractEntry src/binding.cc
+885 silly gunzTarPerm modified mode [ 'src/binding.cc', 436, 420 ]
+886 silly gunzTarPerm extractEntry test/
+887 silly gunzTarPerm modified mode [ 'test/', 509, 493 ]
+888 silly gunzTarPerm extractEntry test/test.js
+889 silly gunzTarPerm modified mode [ 'test/test.js', 436, 420 ]
+890 verbose write writing to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/package.json
+891 info preinstall mariasql@0.2.6
+892 verbose readDependencies loading dependencies from /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/package.json
+893 silly prepareForInstallMany adding lru-cache@^2.7.0 from mariasql dependencies
+894 silly prepareForInstallMany adding nan@^2.0.9 from mariasql dependencies
+895 verbose readDependencies loading dependencies from /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/package.json
+896 silly cache add args [ 'lru-cache@^2.7.0', null ]
+897 verbose cache add spec lru-cache@^2.7.0
+898 silly cache add args [ 'nan@^2.0.9', null ]
+899 verbose cache add spec nan@^2.0.9
+900 silly cache add parsed spec Result {
+900 silly cache add   raw: 'lru-cache@^2.7.0',
+900 silly cache add   scope: null,
+900 silly cache add   name: 'lru-cache',
+900 silly cache add   rawSpec: '^2.7.0',
+900 silly cache add   spec: '>=2.7.0 <3.0.0',
+900 silly cache add   type: 'range' }
+901 silly addNamed lru-cache@>=2.7.0 <3.0.0
+902 verbose addNamed ">=2.7.0 <3.0.0" is a valid semver range for lru-cache
+903 silly addNameRange { name: 'lru-cache', range: '>=2.7.0 <3.0.0', hasData: false }
+904 silly mapToRegistry name lru-cache
+905 silly mapToRegistry using default registry
+906 silly mapToRegistry registry https://registry.npmjs.org/
+907 silly mapToRegistry uri https://registry.npmjs.org/lru-cache
+908 verbose addNameRange registry:https://registry.npmjs.org/lru-cache not in flight; fetching
+909 silly cache add parsed spec Result {
+909 silly cache add   raw: 'nan@^2.0.9',
+909 silly cache add   scope: null,
+909 silly cache add   name: 'nan',
+909 silly cache add   rawSpec: '^2.0.9',
+909 silly cache add   spec: '>=2.0.9 <3.0.0',
+909 silly cache add   type: 'range' }
+910 silly addNamed nan@>=2.0.9 <3.0.0
+911 verbose addNamed ">=2.0.9 <3.0.0" is a valid semver range for nan
+912 silly addNameRange { name: 'nan', range: '>=2.0.9 <3.0.0', hasData: false }
+913 silly mapToRegistry name nan
+914 silly mapToRegistry using default registry
+915 silly mapToRegistry registry https://registry.npmjs.org/
+916 silly mapToRegistry uri https://registry.npmjs.org/nan
+917 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+918 verbose request uri https://registry.npmjs.org/lru-cache
+919 verbose request no auth needed
+920 info attempt registry request try #1 at 1:42:18 AM
+921 verbose etag "6DGAC5MW43QNCMLX9S0IR97T0"
+922 http request GET https://registry.npmjs.org/lru-cache
+923 verbose request uri https://registry.npmjs.org/nan
+924 verbose request no auth needed
+925 info attempt registry request try #1 at 1:42:18 AM
+926 verbose etag "24B26O57Z0ASCDVIYEYKA8KVW"
+927 http request GET https://registry.npmjs.org/nan
+928 http 304 https://registry.npmjs.org/nan
+929 silly get cb [ 304,
+929 silly get   { date: 'Sun, 08 May 2016 22:42:18 GMT',
+929 silly get     via: '1.1 varnish',
+929 silly get     'cache-control': 'max-age=300',
+929 silly get     etag: '"24B26O57Z0ASCDVIYEYKA8KVW"',
+929 silly get     age: '102',
+929 silly get     connection: 'keep-alive',
+929 silly get     'x-served-by': 'cache-fra1244-FRA',
+929 silly get     'x-cache': 'HIT',
+929 silly get     'x-cache-hits': '2',
+929 silly get     'x-timer': 'S1462747338.764345,VS0,VE0',
+929 silly get     vary: 'Accept-Encoding' } ]
+930 verbose etag https://registry.npmjs.org/nan from cache
+931 verbose get saving nan to /Users/anton/.npm/registry.npmjs.org/nan/.cache.json
+932 http 304 https://registry.npmjs.org/lru-cache
+933 silly get cb [ 304,
+933 silly get   { date: 'Sun, 08 May 2016 22:42:18 GMT',
+933 silly get     via: '1.1 varnish',
+933 silly get     'cache-control': 'max-age=300',
+933 silly get     etag: '"6DGAC5MW43QNCMLX9S0IR97T0"',
+933 silly get     age: '230',
+933 silly get     connection: 'keep-alive',
+933 silly get     'x-served-by': 'cache-fra1220-FRA',
+933 silly get     'x-cache': 'HIT',
+933 silly get     'x-cache-hits': '1',
+933 silly get     'x-timer': 'S1462747338.767690,VS0,VE0',
+933 silly get     vary: 'Accept-Encoding' } ]
+934 verbose etag https://registry.npmjs.org/lru-cache from cache
+935 verbose get saving lru-cache to /Users/anton/.npm/registry.npmjs.org/lru-cache/.cache.json
+936 silly addNameRange number 2 { name: 'nan', range: '>=2.0.9 <3.0.0', hasData: true }
+937 silly addNameRange versions [ 'nan',
+937 silly addNameRange   [ '0.3.0-wip',
+937 silly addNameRange     '0.3.0-wip2',
+937 silly addNameRange     '0.3.0',
+937 silly addNameRange     '0.3.1',
+937 silly addNameRange     '0.3.2',
+937 silly addNameRange     '0.4.0',
+937 silly addNameRange     '0.4.1',
+937 silly addNameRange     '0.4.2',
+937 silly addNameRange     '0.4.3',
+937 silly addNameRange     '0.4.4',
+937 silly addNameRange     '0.5.0',
+937 silly addNameRange     '0.5.1',
+937 silly addNameRange     '0.5.2',
+937 silly addNameRange     '0.6.0',
+937 silly addNameRange     '0.7.0',
+937 silly addNameRange     '0.7.1',
+937 silly addNameRange     '0.8.0',
+937 silly addNameRange     '1.0.0',
+937 silly addNameRange     '1.1.0',
+937 silly addNameRange     '1.1.1',
+937 silly addNameRange     '1.1.2',
+937 silly addNameRange     '1.2.0',
+937 silly addNameRange     '1.3.0',
+937 silly addNameRange     '1.4.0',
+937 silly addNameRange     '1.4.1',
+937 silly addNameRange     '1.5.0',
+937 silly addNameRange     '1.4.2',
+937 silly addNameRange     '1.4.3',
+937 silly addNameRange     '1.5.1',
+937 silly addNameRange     '1.5.2',
+937 silly addNameRange     '1.6.0',
+937 silly addNameRange     '1.5.3',
+937 silly addNameRange     '1.6.1',
+937 silly addNameRange     '1.6.2',
+937 silly addNameRange     '1.7.0',
+937 silly addNameRange     '1.8.0',
+937 silly addNameRange     '1.8.1',
+937 silly addNameRange     '1.8.2',
+937 silly addNameRange     '1.8.3',
+937 silly addNameRange     '1.8.4',
+937 silly addNameRange     '1.9.0',
+937 silly addNameRange     '2.0.0',
+937 silly addNameRange     '2.0.1',
+937 silly addNameRange     '2.0.2',
+937 silly addNameRange     '2.0.3',
+937 silly addNameRange     '2.0.4',
+937 silly addNameRange     '2.0.5',
+937 silly addNameRange     '2.0.6',
+937 silly addNameRange     '2.0.7',
+937 silly addNameRange     '2.0.8',
+937 silly addNameRange     '2.0.9',
+937 silly addNameRange     '2.1.0',
+937 silly addNameRange     '2.2.0',
+937 silly addNameRange     '2.2.1',
+937 silly addNameRange     '2.3.0',
+937 silly addNameRange     '2.3.1',
+937 silly addNameRange     '2.3.2',
+937 silly addNameRange     '2.3.3' ] ]
+938 silly addNamed nan@2.3.3
+939 verbose addNamed "2.3.3" is a plain semver version for nan
+940 silly addNameRange number 2 { name: 'lru-cache', range: '>=2.7.0 <3.0.0', hasData: true }
+941 silly addNameRange versions [ 'lru-cache',
+941 silly addNameRange   [ '1.0.1',
+941 silly addNameRange     '1.0.2',
+941 silly addNameRange     '1.0.3',
+941 silly addNameRange     '1.0.4',
+941 silly addNameRange     '1.0.5',
+941 silly addNameRange     '1.0.6',
+941 silly addNameRange     '1.1.0',
+941 silly addNameRange     '1.1.1',
+941 silly addNameRange     '2.0.0',
+941 silly addNameRange     '2.0.1',
+941 silly addNameRange     '2.0.2',
+941 silly addNameRange     '2.0.3',
+941 silly addNameRange     '2.0.4',
+941 silly addNameRange     '2.1.0',
+941 silly addNameRange     '2.2.0',
+941 silly addNameRange     '2.2.1',
+941 silly addNameRange     '2.2.2',
+941 silly addNameRange     '2.2.4',
+941 silly addNameRange     '2.3.0',
+941 silly addNameRange     '2.3.1',
+941 silly addNameRange     '2.5.0',
+941 silly addNameRange     '2.5.1',
+941 silly addNameRange     '2.5.2',
+941 silly addNameRange     '2.6.0',
+941 silly addNameRange     '2.6.1',
+941 silly addNameRange     '2.6.2',
+941 silly addNameRange     '2.6.3',
+941 silly addNameRange     '2.6.4',
+941 silly addNameRange     '2.6.5',
+941 silly addNameRange     '2.7.0',
+941 silly addNameRange     '2.7.1',
+941 silly addNameRange     '2.7.2',
+941 silly addNameRange     '2.7.3',
+941 silly addNameRange     '3.0.0',
+941 silly addNameRange     '3.1.0',
+941 silly addNameRange     '3.1.1',
+941 silly addNameRange     '3.1.2',
+941 silly addNameRange     '3.2.0',
+941 silly addNameRange     '4.0.0',
+941 silly addNameRange     '4.0.1' ] ]
+942 silly addNamed lru-cache@2.7.3
+943 verbose addNamed "2.7.3" is a plain semver version for lru-cache
+944 silly cache afterAdd nan@2.3.3
+945 verbose afterAdd /Users/anton/.npm/nan/2.3.3/package/package.json not in flight; writing
+946 silly cache afterAdd lru-cache@2.7.3
+947 verbose afterAdd /Users/anton/.npm/lru-cache/2.7.3/package/package.json not in flight; writing
+948 verbose afterAdd /Users/anton/.npm/nan/2.3.3/package/package.json written
+949 verbose afterAdd /Users/anton/.npm/lru-cache/2.7.3/package/package.json written
+950 silly install resolved [ { name: 'nan',
+950 silly install resolved     version: '2.3.3',
+950 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 6 compatibility',
+950 silly install resolved     main: 'include_dirs.js',
+950 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+950 silly install resolved     scripts:
+950 silly install resolved      { test: 'tap --gc --stderr test/js/*-test.js',
+950 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+950 silly install resolved        docs: 'doc/.build.sh' },
+950 silly install resolved     contributors:
+950 silly install resolved      [ [Object],
+950 silly install resolved        [Object],
+950 silly install resolved        [Object],
+950 silly install resolved        [Object],
+950 silly install resolved        [Object],
+950 silly install resolved        [Object],
+950 silly install resolved        [Object] ],
+950 silly install resolved     devDependencies:
+950 silly install resolved      { bindings: '~1.2.1',
+950 silly install resolved        commander: '^2.8.1',
+950 silly install resolved        glob: '^5.0.14',
+950 silly install resolved        'node-gyp': '~3.0.1',
+950 silly install resolved        tap: '~0.7.1',
+950 silly install resolved        xtend: '~4.0.0' },
+950 silly install resolved     license: 'MIT',
+950 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+950 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+950 silly install resolved     _id: 'nan@2.3.3',
+950 silly install resolved     _shasum: '64dd83c9704a83648b6c72b401f6384bd94ef16f',
+950 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.3.3.tgz',
+950 silly install resolved     _from: 'nan@>=2.0.9 <3.0.0',
+950 silly install resolved     _npmVersion: '3.3.6',
+950 silly install resolved     _nodeVersion: '5.0.0',
+950 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+950 silly install resolved     dist:
+950 silly install resolved      { shasum: '64dd83c9704a83648b6c72b401f6384bd94ef16f',
+950 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.3.3.tgz' },
+950 silly install resolved     maintainers: [ [Object], [Object] ],
+950 silly install resolved     _npmOperationalInternal:
+950 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+950 silly install resolved        tmp: 'tmp/nan-2.3.3.tgz_1462313618725_0.044748055282980204' },
+950 silly install resolved     directories: {},
+950 silly install resolved     readme: 'ERROR: No README data found!' },
+950 silly install resolved   { name: 'lru-cache',
+950 silly install resolved     description: 'A cache object that deletes the least-recently-used items.',
+950 silly install resolved     version: '2.7.3',
+950 silly install resolved     author: { name: 'Isaac Z. Schlueter', email: 'i@izs.me' },
+950 silly install resolved     keywords: [ 'mru', 'lru', 'cache' ],
+950 silly install resolved     scripts: { test: 'tap test --gc' },
+950 silly install resolved     main: 'lib/lru-cache.js',
+950 silly install resolved     repository:
+950 silly install resolved      { type: 'git',
+950 silly install resolved        url: 'git://github.com/isaacs/node-lru-cache.git' },
+950 silly install resolved     devDependencies: { tap: '^1.2.0', weak: '' },
+950 silly install resolved     license: 'ISC',
+950 silly install resolved     gitHead: '292048199f6d28b77fbe584279a1898e25e4c714',
+950 silly install resolved     bugs: { url: 'https://github.com/isaacs/node-lru-cache/issues' },
+950 silly install resolved     homepage: 'https://github.com/isaacs/node-lru-cache#readme',
+950 silly install resolved     _id: 'lru-cache@2.7.3',
+950 silly install resolved     _shasum: '6d4524e8b955f95d4f5b58851ce21dd72fb4e952',
+950 silly install resolved     _from: 'lru-cache@>=2.7.0 <3.0.0',
+950 silly install resolved     _npmVersion: '3.3.2',
+950 silly install resolved     _nodeVersion: '4.0.0',
+950 silly install resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+950 silly install resolved     dist:
+950 silly install resolved      { shasum: '6d4524e8b955f95d4f5b58851ce21dd72fb4e952',
+950 silly install resolved        tarball: 'https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.3.tgz' },
+950 silly install resolved     maintainers: [ [Object], [Object] ],
+950 silly install resolved     directories: {},
+950 silly install resolved     _resolved: 'https://registry.npmjs.org/lru-cache/-/lru-cache-2.7.3.tgz',
+950 silly install resolved     readme: 'ERROR: No README data found!' } ]
+951 info install nan@2.3.3 into /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+952 info install lru-cache@2.7.3 into /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+953 info installOne nan@2.3.3
+954 verbose installOne of nan to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql not in flight; installing
+955 info installOne lru-cache@2.7.3
+956 verbose installOne of lru-cache to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql not in flight; installing
+957 verbose lock using /Users/anton/.npm/_locks/nan-e929ecd966d86d18.lock for /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan
+958 verbose lock using /Users/anton/.npm/_locks/lru-cache-540f760a281f734f.lock for /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache
+959 silly install write writing nan 2.3.3 to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan
+960 silly install write writing lru-cache 2.7.3 to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache
+961 verbose unbuild lib/node_modules/mariasql/node_modules/nan
+962 verbose unbuild lib/node_modules/mariasql/node_modules/lru-cache
+963 silly gentlyRm /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan is being purged from base /Users/anton/.nvm/versions/node/v4.0.0
+964 verbose gentlyRm don't care about contents; nuking /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan
+965 silly gentlyRm /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache is being purged from base /Users/anton/.nvm/versions/node/v4.0.0
+966 verbose gentlyRm don't care about contents; nuking /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache
+967 verbose tar unpack /Users/anton/.npm/nan/2.3.3/package.tgz
+968 verbose tar unpacking to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan
+969 silly gentlyRm /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan is being purged
+970 verbose gentlyRm don't care about contents; nuking /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan
+971 verbose tar unpack /Users/anton/.npm/lru-cache/2.7.3/package.tgz
+972 verbose tar unpacking to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache
+973 silly gentlyRm /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache is being purged
+974 verbose gentlyRm don't care about contents; nuking /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache
+975 silly gunzTarPerm modes [ '755', '644' ]
+976 silly gunzTarPerm modes [ '755', '644' ]
+977 silly gunzTarPerm extractEntry package.json
+978 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+979 silly gunzTarPerm extractEntry package.json
+980 silly gunzTarPerm extractEntry README.md
+981 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+982 silly gunzTarPerm extractEntry .npmignore
+983 silly gunzTarPerm extractEntry README.md
+984 silly gunzTarPerm extractEntry include_dirs.js
+985 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+986 silly gunzTarPerm extractEntry LICENSE
+987 silly gunzTarPerm extractEntry .travis.yml
+988 silly gunzTarPerm extractEntry nan_converters.h
+989 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+990 silly gunzTarPerm extractEntry LICENSE.md
+991 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+992 silly gunzTarPerm extractEntry doc/node_misc.md
+993 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+994 silly gunzTarPerm extractEntry CONTRIBUTORS
+995 silly gunzTarPerm extractEntry lib/lru-cache.js
+996 silly gunzTarPerm extractEntry test/basic.js
+997 silly gunzTarPerm extractEntry doc/asyncworker.md
+998 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+999 silly gunzTarPerm extractEntry test/foreach.js
+1000 silly gunzTarPerm extractEntry test/memory-leak.js
+1001 silly gunzTarPerm extractEntry test/serialize.js
+1002 silly gunzTarPerm extractEntry doc/callback.md
+1003 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+1004 silly gunzTarPerm extractEntry doc/converters.md
+1005 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+1006 silly gunzTarPerm extractEntry doc/errors.md
+1007 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+1008 silly gunzTarPerm extractEntry doc/maybe_types.md
+1009 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+1010 silly gunzTarPerm extractEntry doc/methods.md
+1011 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+1012 silly gunzTarPerm extractEntry doc/new.md
+1013 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+1014 silly gunzTarPerm extractEntry doc/buffers.md
+1015 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+1016 silly gunzTarPerm extractEntry doc/object_wrappers.md
+1017 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 420 ]
+1018 silly gunzTarPerm extractEntry doc/persistent.md
+1019 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+1020 silly gunzTarPerm extractEntry doc/scopes.md
+1021 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+1022 silly gunzTarPerm extractEntry doc/script.md
+1023 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+1024 silly gunzTarPerm extractEntry doc/string_bytes.md
+1025 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+1026 silly gunzTarPerm extractEntry doc/v8_internals.md
+1027 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+1028 silly gunzTarPerm extractEntry doc/v8_misc.md
+1029 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+1030 silly gunzTarPerm extractEntry nan.h
+1031 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+1032 verbose write writing to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache/package.json
+1033 silly gunzTarPerm extractEntry nan_callbacks.h
+1034 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+1035 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+1036 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+1037 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+1038 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+1039 info preinstall lru-cache@2.7.3
+1040 verbose readDependencies loading dependencies from /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache/package.json
+1041 verbose readDependencies loading dependencies from /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache/package.json
+1042 silly install resolved []
+1043 verbose about to build /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache
+1044 info build /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache
+1045 info linkStuff lru-cache@2.7.3
+1046 silly linkStuff lru-cache@2.7.3 has /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules as its parent node_modules
+1047 silly linkStuff lru-cache@2.7.3 is part of a global install
+1048 silly linkStuff lru-cache@2.7.3 is installed into a global node_modules
+1049 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+1050 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+1051 verbose linkBins lru-cache@2.7.3
+1052 verbose linkMans lru-cache@2.7.3
+1053 verbose rebuildBundles lru-cache@2.7.3
+1054 info install lru-cache@2.7.3
+1055 info postinstall lru-cache@2.7.3
+1056 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+1057 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+1058 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+1059 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+1060 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+1061 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+1062 verbose unlock done using /Users/anton/.npm/_locks/lru-cache-540f760a281f734f.lock for /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/lru-cache
+1063 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+1064 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+1065 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+1066 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+1067 silly gunzTarPerm extractEntry nan_new.h
+1068 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+1069 silly gunzTarPerm extractEntry nan_object_wrap.h
+1070 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+1071 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+1072 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+1073 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+1074 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+1075 silly gunzTarPerm extractEntry nan_string_bytes.h
+1076 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+1077 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+1078 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 420 ]
+1079 silly gunzTarPerm extractEntry nan_weak.h
+1080 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+1081 silly gunzTarPerm extractEntry CHANGELOG.md
+1082 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+1083 silly gunzTarPerm extractEntry tools/package.json
+1084 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+1085 silly gunzTarPerm extractEntry tools/README.md
+1086 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+1087 silly gunzTarPerm extractEntry tools/1to2.js
+1088 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+1089 verbose write writing to /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan/package.json
+1090 info preinstall nan@2.3.3
+1091 verbose readDependencies loading dependencies from /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan/package.json
+1092 verbose readDependencies loading dependencies from /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan/package.json
+1093 silly install resolved []
+1094 verbose about to build /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan
+1095 info build /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan
+1096 info linkStuff nan@2.3.3
+1097 silly linkStuff nan@2.3.3 has /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules as its parent node_modules
+1098 silly linkStuff nan@2.3.3 is part of a global install
+1099 silly linkStuff nan@2.3.3 is installed into a global node_modules
+1100 verbose linkBins nan@2.3.3
+1101 verbose linkMans nan@2.3.3
+1102 verbose rebuildBundles nan@2.3.3
+1103 info install nan@2.3.3
+1104 info postinstall nan@2.3.3
+1105 verbose unlock done using /Users/anton/.npm/_locks/nan-e929ecd966d86d18.lock for /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql/node_modules/nan
+1106 verbose about to build /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+1107 info build /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+1108 info linkStuff mariasql@0.2.6
+1109 silly linkStuff mariasql@0.2.6 has /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules as its parent node_modules
+1110 silly linkStuff mariasql@0.2.6 is part of a global install
+1111 silly linkStuff mariasql@0.2.6 is installed into a global node_modules
+1112 silly linkStuff mariasql@0.2.6 is installed into the top-level global node_modules
+1113 verbose linkBins mariasql@0.2.6
+1114 verbose linkMans mariasql@0.2.6
+1115 verbose rebuildBundles mariasql@0.2.6
+1116 verbose rebuildBundles [ 'lru-cache', 'nan' ]
+1117 info install mariasql@0.2.6
+1118 verbose unsafe-perm in lifecycle true
+1119 info mariasql@0.2.6 Failed to exec install script
+1120 verbose unlock done using /Users/anton/.npm/_locks/mariasql-5279b91ed937eaed.lock for /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+1121 verbose stack Error: mariasql@0.2.6 install: `node-gyp rebuild`
+1121 verbose stack Exit status 1
+1121 verbose stack     at EventEmitter.<anonymous> (/Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+1121 verbose stack     at emitTwo (events.js:87:13)
+1121 verbose stack     at EventEmitter.emit (events.js:172:7)
+1121 verbose stack     at ChildProcess.<anonymous> (/Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+1121 verbose stack     at emitTwo (events.js:87:13)
+1121 verbose stack     at ChildProcess.emit (events.js:172:7)
+1121 verbose stack     at maybeClose (internal/child_process.js:817:16)
+1121 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+1122 verbose pkgid mariasql@0.2.6
+1123 verbose cwd /Users/anton/Dropbox/classes/sem 8/node.js
+1124 error Darwin 14.0.0
+1125 error argv "/Users/anton/.nvm/versions/node/v4.0.0/bin/node" "/Users/anton/.nvm/versions/node/v4.0.0/bin/npm" "i" "-g" "mariasql"
+1126 error node v4.0.0
+1127 error npm  v2.14.2
+1128 error code ELIFECYCLE
+1129 error mariasql@0.2.6 install: `node-gyp rebuild`
+1129 error Exit status 1
+1130 error Failed at the mariasql@0.2.6 install script 'node-gyp rebuild'.
+1130 error This is most likely a problem with the mariasql package,
+1130 error not with npm itself.
+1130 error Tell the author that this fails on your system:
+1130 error     node-gyp rebuild
+1130 error You can get their info via:
+1130 error     npm owner ls mariasql
+1130 error There is likely additional logging output above.
+1131 verbose exit [ 1, true ]
+1132 verbose unbuild lib/node_modules/mariasql
+1133 info preuninstall mariasql@0.2.6
+1134 info uninstall mariasql@0.2.6
+1135 verbose unbuild rmStuff mariasql@0.2.6 from /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules
+1136 info postuninstall mariasql@0.2.6
+1137 silly gentlyRm /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql is being purged from base /Users/anton/.nvm/versions/node/v4.0.0
+1138 verbose gentlyRm don't care about contents; nuking /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+1139 silly vacuum-fs purging /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules/mariasql
+1140 silly vacuum-fs quitting because other entries in /Users/anton/.nvm/versions/node/v4.0.0/lib/node_modules
