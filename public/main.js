@@ -17,11 +17,28 @@ window.onload = function() {
 				});
 				setTimeout(function () {
 					socket.send({
-						action: 'removeAction',
+						action: 'addAction',
 						data: {
-							id: 2
+							object: 'object',
+							xMin: 1,
+							xMax: 2,
+							yMin: 3,
+							yMax: 4
 						}
 					});
+					setTimeout(function () {
+						socket.send({
+							action: 'getAreaActions',
+							data: {
+								xMin: 1,
+								xMax: 2,
+								yMin: 3,
+								yMax: 4,
+								timeStart: 0,
+								timeEnd: 1562728126770
+							}
+						});
+					}, 1000);
 				}, 1000);
 			}
 		};

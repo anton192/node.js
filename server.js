@@ -76,6 +76,26 @@ io.sockets.on('connection', function (socket) {
 			});	
 		}
 
+		if (query.action == 'getMyActions') {
+			c.query('SELECT * FROM actions WHERE session = \'' + sessions[socket.id] + '\' AND time >= ? AND time <= ?;', [query.data.timeStart, query.data.timeEnd], function(err, rows) {
+				if (err) {
+					socket.json.send({ action: 'getMyActions', type: 'error', data: { type: 'DB', error: err } });
+				} else {
+					socket.json.send({ action: 'getMyActions', type: 'data', data: rows });
+				}
+			});	
+		}
+
+		if (query.action == 'getAreaActions') {
+			c.query('SELECT object FROM actions WHERE ((:xMin <= xMin AND xmin <= :xMax) OR (:xMin <= xMax AND xMax <= :xMax)) AND ((:yMin <= yMin AND ymin <= :yMax) OR (:yMin <= yMax AND yMax <= :yMax)) AND time >= ' + query.data.timeStart + ' AND time <= ' + query.data.timeEnd + ';', query.data, function(err, rows) {
+				if (err) {
+					socket.json.send({ action: 'getAreaActions', type: 'error', data: { type: 'DB', error: err } });
+				} else {
+					socket.json.send({ action: 'getAreaActions', type: 'data', data: rows });
+				}
+			});
+		}
+
 		/*
 			CREATE TABLE actions(
 				id INT NOT NULL AUTO_INCREMENT,
@@ -96,23 +116,3 @@ io.sockets.on('connection', function (socket) {
 		c.end();
 	});
 });
-
-
-/*var io = require('socket.io').listen(8081); 
-//io.set('log level', 1);
-
-io.sockets.on('connection', function (socket) {
-	var ID = (socket.id).toString().substr(0, 5);
-	var time = (new Date).toLocaleTimeString();
-	socket.json.send({'event': 'connected', 'name': ID, 'time': time});
-	socket.broadcast.json.send({'event': 'userJoined', 'name': ID, 'time': time});
-	socket.on('message', function (msg) {
-		var time = (new Date).toLocaleTimeString();
-		socket.json.send({'event': 'messageSent', 'name': ID, 'text': msg, 'time': time});
-		socket.broadcast.json.send({'event': 'messageReceived', 'name': ID, 'text': msg, 'time': time})
-	});
-	socket.on('disconnect', function() {
-		var time = (new Date).toLocaleTimeString();
-		io.sockets.json.send({'event': 'userSplit', 'name': ID, 'time': time});
-	});
-});*/
